@@ -1,11 +1,13 @@
 // var express = require("express");
-// var piblaster = require("pi-blaster.js");
+var piblaster = require("pi-blaster.js");
 var Redoid = require('redoid');
-var piblaster = require('pi-blaster.js');
 
-    piblaster.setPwm(17, 1 );
-    piblaster.setPwm(22, 0.2 );
-    piblaster.setPwm(23, 0 );
+//17 Red grey
+//22 Green white
+//23 Blue purple
+    // piblaster.setPwm(17, 1 );
+    // piblaster.setPwm(22, 0.2 );
+    // piblaster.setPwm(23, 0 );
 
 var redoid = Redoid({
 	color: '#ffffff',
@@ -32,4 +34,5 @@ for (var easing in Redoid.easingFunctions){
 
 function red () {
 	console.log("red");
+	piblaster.setPwm(17, 1 );
 };
