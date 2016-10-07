@@ -9,16 +9,28 @@
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Pi Controls -->
+		<script type="text/javascript" src="node_modules/pi-blaster.js/pi-blaster.js"></script>
+		<script type="text/javascript" src="node_modules/redoid/index.js"></script>
 		<!-- Local Files -->
 		<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
 
 	</head>
 	<body onload="blackOut()">
 		<h1 class="text-center"><strong>Remote Dioder</strong></h1>
-		<button id="red" class="btn-danger col-xs-2 col-md-offset-1" onclick="red();">Red</button>
-		<button id="blue" class="btn-primary col-xs-2 col-md-offset-1" onclick="blue();">Blue</button>
-		<button id="green" class="btn-success col-xs-2 col-md-offset-1" onclick="green();">Green</button>
+		<h2 id="allRed" onclick="red();">Red</h2>
+		<h2 id="allGreen"onclick="green();">Green</h2>
+		<h2 id="allBlue" onclick="blue();">Blue</h2>
+		<br><br><br>
+<h2>Enter 0-10 for light levels</h2>
 
+<form id="levels">
+  Red <input type="number" min="0" max="10" id="red" name="red"><br>
+  Green <input type="number" min="0" max="10" id='green' name="green"><br>
+  Blue <input type="number" min="0" max="10" id='blue' name="blue"><br><br>
+  <input type="button" onclick="levels(this.form)" value="Submit">
+</form>
 
 
  	

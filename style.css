@@ -1,0 +1,27 @@
+body{
+max-width: 800px;
+margin: 0 auto !important;
+float: none !important;
+}
+#allRed{
+	background: red;
+	width: 400px;
+	font-size: 42px;
+	text-align: center;
+}
+#allGreen{
+	background: green;
+	width: 400px;
+	font-size: 42px;
+	text-align: center;
+}
+#allBlue{
+	background: blue;
+	width: 400px;
+	font-size: 42px;
+	text-align: center;
+}
+form{
+	border: 1px solid black;
+	width: 400px;
+}

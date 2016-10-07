@@ -5,6 +5,7 @@
   "main": "script.js",
   "dependencies": {
     "express": "^4.14.0",
+    "nodejs": "0.0.0",
     "pi-blaster.js": "^0.1.1",
     "redoid": "^0.1.3"
   },

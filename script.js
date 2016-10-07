@@ -5,14 +5,12 @@ var Redoid = require('redoid');
 //17 Red grey
 //22 Green white
 //23 Blue purple
-// piblaster.setPwm(17, 1 );
-// piblaster.setPwm(22, 0.2 );
-// piblaster.setPwm(23, 0 );
+
 function blackOut () {
 	piblaster.setPwm(17, 0);
 	piblaster.setPwm(22, 0);
 	piblaster.setPwm(23, 0);}
-	
+
 var redoid = Redoid({
 	color: '#ffffff',
 	colorComponentPins: [4, 17, 18],
@@ -56,3 +54,16 @@ function green() {
 	piblaster.setPwm(22, 0);
 	piblaster.setPwm(23, 1);
 };
+
+function levels (form) {
+	var red = form.red.value;
+	var blue = form.blue.value;
+	var green = form.green.value;
+	red = red/10;
+	green = green/10;
+	blue = blue/10;
+	console.log('red: '+red+' green: '+green+' blue: '+blue);
+	piblaster.setPwm(17, red);
+	piblaster.setPwm(22, blue);
+	piblaster.setPwm(23, green);
+}
