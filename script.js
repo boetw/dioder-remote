@@ -3,10 +3,10 @@
 var Redoid = require('redoid');
 var piblaster = require('pi-blaster.js');
 
-    piblaster.setPwm(17, 1 ); # 100% brightness
-    piblaster.setPwm(22, 0.2 ); # 20% brightness
-    piblaster.setPwm(23, 0 ); # off
-    
+    piblaster.setPwm(17, 1 );
+    piblaster.setPwm(22, 0.2 );
+    piblaster.setPwm(23, 0 );
+
 var redoid = Redoid({
 	color: '#ffffff',
 	colorComponentPins: [4, 17, 18],
